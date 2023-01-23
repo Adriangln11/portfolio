@@ -44,8 +44,8 @@ main{
     color: #cdcdff;
     background-color: #232841;
     font-size: .8rem;
-    z-index: 10;
     position: fixed;
+    z-index: 10;
 }
 a{
     text-decoration: none;
@@ -54,7 +54,10 @@ a{
 ul{
     list-style: none;
 }
-.links{
+.link:hover{
+    color: #90a0d9;
+}
+.nav-links{
     display: flex;
     gap: 20px;
     list-style: none;
@@ -76,7 +79,6 @@ a::before {
   }
 
 #welcome-section{
-    
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -139,8 +141,9 @@ h1 span{
 .button-cv:hover::before{
     right: 0;
 }
-#projects{
+#projects-section{
     min-height: 500px;
+    margin: 40px 0;
 }
 h2{
     text-align: center;
@@ -148,26 +151,48 @@ h2{
     color: #90a0d9;
 }
 .projects-container{
-    width: 90%;
+    width: 100%;
     height: auto;
     margin: auto;
-    padding: 10px;
+    padding: 40px;
     display: flex;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 4rem;
     justify-content: center;
     align-items: center;
 }
-.project-tile{
-    width: 280px;
+.project{
+    min-width: 250px;
     height: 300px;
-    padding: 20px;
+    margin-top: 40px;
+    flex: 1;
+    flex-direction: column;
+    transition: flex, transform,  .5s;
+}
+.project-img{
+    height: 80%;
+    background-position: center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    filter: brightness(.7);
+}
+.project-tile{
+    
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    color: #cdcdff;
+    padding: 20px 0;
+    color: #90a0d9;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px;
+    
+}
+.project:hover{
+    flex: 2;
+    transform: scale(1.1);
+}
+.project:hover .project-img{
+    filter: brightness(1);
 }
 .project-tile a{
     width: 15px;
@@ -177,6 +202,7 @@ h2{
     height: 400px;
     display: flex;
     flex-direction: column;
+
 }
 form{
     display: flex;
