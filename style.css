@@ -141,6 +141,18 @@ h1 span{
 .button-cv:hover::before{
     right: 0;
 }
+#about-section{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    font-size: 1rem;
+    color: #cdcdff;
+}
+#about-section p{
+    padding: 30px;
+    margin: 30px auto;
+    text-align: justify;
+}
 #projects-section{
     min-height: 500px;
     margin: 40px 0;
@@ -170,14 +182,14 @@ h2{
     transition: flex, transform,  .5s;
 }
 .project-img{
-    height: 80%;
+    height: 70%;
     background-position: center;
     background-size: auto 100%;
     background-repeat: no-repeat;
     filter: brightness(.7);
 }
 .project-tile{
-    
+    height: 40%;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -202,12 +214,14 @@ h2{
     height: 400px;
     display: flex;
     flex-direction: column;
-
 }
-form{
+#contact-section .cv-container{
+    color: #cdcdff;
+}
+.contact-form{
     display: flex;
     flex-direction: column;
-    margin: 50px 0;
+    margin: 30px 0;
 }
 input{
     border: none;
@@ -221,10 +235,20 @@ input{
 input::placeholder{
     color: #90a0d9;
 }
-form button{
+textarea{
+    border: none;
+    background-color: #1a1e35ce;
+    width: 70%;
+    height: 100px;
+    margin: 10px auto;
+    padding-left: 10px;
+    color: #cdcdff;
+    resize: none;
+}
+.contact-form button{
     display: block;
     background: transparent;
-    width: 300px;
+    width: 250px;
     height: 50px;
     border: 2px solid #90a0d9;
     color: #90a0d9;
@@ -237,7 +261,7 @@ form button{
     z-index: 1;
     transition: transform 0.2s ease-in-out;
 }
-form button::before{
+.contact-form button::before{
     content: "";
     position: absolute;
     background-color: #90a0d9;
@@ -248,15 +272,15 @@ form button::before{
     z-index: -1;
     transition: right 0.2s ease-in-out;
 }
-form button:hover{
+.contact-form button:hover{
     color: #2a2f4c;
 }
-form button:hover::before{
+.contact-form button:hover::before{
     right: 0;
 }
 
 @media (min-width:760px) {
-    input{
+    input,textarea{
         max-width: 500px;
     }
     h1{

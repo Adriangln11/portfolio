@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
     <link rel="stylesheet" href="style.css">
-    <title>Portfolio FCC</title>
+    <title>AdrianDiaz</title>
 </head>
 <body>
     
@@ -43,6 +43,16 @@
                     <a class="link" href="https://www.linkedin.com/in/adrian-d%C3%ADaz-08738922a" target="_blank"><i class="bi bi-linkedin"></i></a>
                 </div>
             </div>
+        </section>
+        <section id="about-section">
+            <h2>About Me</h2>
+            <p>Hello, my name is Adrián, I am currently looking to formally enter   the field of development, <br>
+                I started studying web development in a self-taught way since 2021, and with the help of different documentation and various platforms I have obtained knowledge in different technologies in different measures, mainly in JavaScript. <br> <br>
+                
+                Throughout that time I have had experience developing and creating small applications <br> such as a basic JS documentation site. <br> <br>
+                
+                The objective that I have right now is to be able to continue implementing this knowledge in practice <br> to develop it even more,
+                At the same time that I continue training in other technologies</p>
         </section>
         <section id="projects-section">
             <h2>Projects</h2>
@@ -77,8 +87,21 @@
                     </div>
                 </div>
                 <div class="project">
-                    <div class="project-img" target="_blank" style="background-image: url('./assets/project3.png')">
+                    <div class="project-img" style="background-image: url('./assets/project5.png')">
 
+                    </div>
+                    <div class="project-tile" >
+                        <h3>Landing Page</h3>
+                        <ul>
+                            <li>HTML </li>
+                            <li>CSS</li>
+                        </ul>
+                        <a class="link" target="_blank" href="https://github.com/Adriangln11/imagine-dragons-landig"><i class="bi bi-github"></i></a>
+                        </a>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-img" target="_blank" style="background-image: url('./assets/project3.png')">
                     </div>
                     <div class="project-tile">
                         <h3>Tasks/Notes Manager</h3>
@@ -110,11 +133,19 @@
         </section>
         <section id="contact-section">
             <h2>Contact Me</h2>
-            <form action="#">
-                <input type="email" name="email" placeholder="Email">
-                <input type="text" placeholder="Message">
+            <div class="cv-container">
+                <button href=""><span class="button-cv">cv</span></button>
+                <a class="link" href="https://github.com/Adriangln11" target="_blank"><i class="bi bi-github"></i></a>
+                <a class="link" href="https://www.linkedin.com/in/adrian-d%C3%ADaz-08738922a" target="_blank"><i class="bi bi-linkedin"></i></a>
+            </div>
+            <form class='contact-form'action="#">
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Email" required>
+                <input type="text" placeholder="Subject">
+                <textarea type="text" ></textarea>
                 <button type="submit">Send</button>
             </form>
+            
         </section>
     </main>
 </body>
