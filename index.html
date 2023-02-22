@@ -11,31 +11,32 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
     <link rel="stylesheet" href="style.css">
-    <title>AdrianDiaz</title>
+    <title>Principal</title>
 </head>
 <body>
-    
+
+
     <nav id="navbar">
         <h3>
             <a href="https://github.com/Adriangln11" target="_blank" class="link">&lt;Adrián Díaz&gt;</a>
         </h3>
         <ul class="nav-links">
-            <li><a class="link" href="#welcome-section">Home</a></li>
-            <li><a class="link" href="#projects-section">Projects</a></li>
-            <li><a class="link" href="#contact-section">Contact</a></li>
+            <li><a class="link" href="#about-section">Sobre Mi</a></li>
+            <li><a class="link" href="#projects-section">Projectos</a></li>
+            <li><a class="link" href="#contact-section">Contacto</a></li>
         </ul>
     </nav>
     <main>
         <section id="welcome-section">
             <div class="text-container">
-                <h1>Hey, I am <span> Adrián.</span> ;)</h1>
-                <h2 >A Full-Stack Developer.</h2>
+                <h1>Hey, Soy <span> Adrián.</span> ;)</h1>
+                <h2 >Web Developer.</h2>
                 <p >
-                    I'm a full-stack developer specialised in backend development for complex scalable web apps.Want to know how I may help your project? Check out my projects-section and skills here.
+                    Soy desarrollador Web con principal interés en el backend. ¿Te gustaría saber como puedo ayudar a tu proyecto? Mira mis proyectos y skills aquí.
                 </p>
                 <div class="cv-container">
                     <button href=""><span class="button-cv">cv</span></button>
@@ -45,17 +46,16 @@
             </div>
         </section>
         <section id="about-section">
-            <h2>About Me</h2>
-            <p>Hello, my name is Adrián, I am currently looking to formally enter   the field of development, <br>
-                I started studying web development in a self-taught way since 2021, and with the help of different documentation and various platforms I have obtained knowledge in different technologies in different measures, mainly in JavaScript. <br> <br>
-                
-                Throughout that time I have had experience developing and creating small applications <br> such as a basic JS documentation site. <br> <br>
-                
-                The objective that I have right now is to be able to continue implementing this knowledge in practice <br> to develop it even more,
-                At the same time that I continue training in other technologies</p>
+            <h2>Sobre mi</h2>
+            <p>
+                Hola, mi nombre es Adrián, soy un desarrollador Web con principal interés en el área backend, hace mas de dos años que experimento con JavaScript y las tecnologías básicas en el desarrollo Web, HTML, CSS, últimamente con NodeJs, y SQL del lado del backend, aunque también he utilizado algo de ReacJs. 
+                El objetivo que tengo ahora mismo es poder ganar mas experiencia creando proyectos y participando en voluntariados que me permitan crecer de manera profesional haciendo lo que me gusta. 
+                <br> 
+                Si te interesa saber un poco mas de mi o te gustaría expresarme alguna recomendación o presentarme algún proyecto que te gustaría crear, estoy a tus ordenes.
+            </p>
         </section>
         <section id="projects-section">
-            <h2>Projects</h2>
+            <h2>Projectos</h2>
             <div class="projects-container">
                 <div class="project">
                     <div class="project-img" style="background-image: url('./assets/project1.png')">
@@ -129,24 +129,44 @@
                     
                     </div>
                 </div>
+                <div class="project">
+                    <div class="project-img" style="background-image: url('./assets/project6.png')">
+
+                    </div>
+                    <div class="project-tile">
+                        <h3>Personal site with Node</h3>
+                        <ul>
+                            <li>JavaScript </li>
+                            <li>NodeJs/Express </li>
+                            <li>Ejs</li>
+                        </ul>
+                        <a class="link" target="_blank" href="https://github.com/Adriangln11/personal-site-node"><i class="bi bi-github"></i></a>
+                    
+                    </div>
+                </div>
             </div>
         </section>
         <section id="contact-section">
-            <h2>Contact Me</h2>
+            <h2>Contactame</h2>
             <div class="cv-container">
                 <button href=""><span class="button-cv">cv</span></button>
                 <a class="link" href="https://github.com/Adriangln11" target="_blank"><i class="bi bi-github"></i></a>
                 <a class="link" href="https://www.linkedin.com/in/adrian-d%C3%ADaz-08738922a" target="_blank"><i class="bi bi-linkedin"></i></a>
             </div>
             <form class='contact-form'action="#">
-                <input type="text" placeholder="Your Name">
-                <input type="email" placeholder="Email" required>
-                <input type="text" placeholder="Subject">
+                <input type="text" placeholder=" Nombre">
+                <input type="email" placeholder="Correo" required>
+                <input type="text" placeholder="Motivo">
                 <textarea type="text" ></textarea>
-                <button type="submit">Send</button>
+                <button type="submit">Enviar   <i class="bi bi-send-fill m-3">  </i></button>
             </form>
             
         </section>
     </main>
+
+    <button id="scroll-top-button" class="scroll-top-button" type="button">
+        <i class="bi bi-arrow-up-circle-fill"></i>
+    </button>
+    <script src="main.js"></script>
 </body>
 </html>
