@@ -21,3 +21,4 @@ const scrolltoTop = () => {
 }
 document.addEventListener('scroll', onScroll)
 scrollTopbutton.addEventListener('click', scrolltoTop)
+AOS.init()
